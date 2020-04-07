@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hackforgoodecommerce/pages/cadastrar/cadastrar.dart';
 import 'package:hackforgoodecommerce/pages/login/login.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hackforgoodecommerce/pages/inicial.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: GoogleFonts.pTSans().fontFamily
       ),
-      home: LoginPage(),
+//      home: LoginPage(),
+    home: InicialPage(),
 //    home: CadastrarPage(),
     );
   }
