@@ -17,6 +17,14 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              IconButton(
+                padding: EdgeInsets.all(0),
+
+                icon: Icon(Icons.arrow_back),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              ),
               SizedBox(
                 height: 30,
               ),
@@ -27,7 +35,11 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 20,
               ),
-              Center(child: Image.asset('assets/abertura1.png',width: 150,)),
+              Center(
+                  child: Image.asset(
+                'assets/abertura1.png',
+                width: 150,
+              )),
               TextFormField(
                 decoration: InputDecoration(labelText: 'Email'),
               ),

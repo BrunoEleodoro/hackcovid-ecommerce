@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hackforgoodecommerce/components/custom_button.dart';
+import 'package:hackforgoodecommerce/pages/cadastrar/cadastrar.dart';
+import 'package:hackforgoodecommerce/pages/login/login.dart';
 
 class EscolhaPage extends StatefulWidget {
   @override
@@ -46,6 +48,12 @@ class _EscolhaPageState extends State<EscolhaPage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 20.0, right: 20),
                   child: CustomButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginPage()),
+                      );
+                    },
                     radius: 5,
                     text: 'Entrar',
                   ),
@@ -56,6 +64,12 @@ class _EscolhaPageState extends State<EscolhaPage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 20.0, right: 20),
                   child: CustomButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => CadastrarPage()),
+                      );
+                    },
                     radius: 5,
                     text: 'Cadastrar',
                   ),
