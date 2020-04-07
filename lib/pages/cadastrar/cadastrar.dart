@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:hackforgoodecommerce/components/custom_button.dart';
 
-class LoginPage extends StatefulWidget {
+class CadastrarPage extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _CadastrarPageState createState() => _CadastrarPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _CadastrarPageState extends State<CadastrarPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,18 +18,38 @@ class _LoginPageState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               SizedBox(
-                height: 30,
+                height: 60,
               ),
               Text(
-                'Entrar',
+                'Cadastrar',
                 style: TextStyle(fontSize: 35),
+              ),
+              SizedBox(
+                height: 60,
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: 'Nome'),
               ),
               SizedBox(
                 height: 20,
               ),
-              Center(child: Image.asset('assets/abertura1.png',width: 150,)),
+              TextFormField(
+                decoration: InputDecoration(labelText: 'CPF ou CNPJ'),
+                obscureText: true,
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: 'Whatsapp'),
+                obscureText: true,
+              ),
+              SizedBox(
+                height: 20,
+              ),
               TextFormField(
                 decoration: InputDecoration(labelText: 'Email'),
+                obscureText: true,
               ),
               SizedBox(
                 height: 20,
@@ -41,19 +61,7 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    'Esqueceu a senha?',
-                    style: TextStyle(color: Colors.blueGrey),
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text('Redefinir')
-                ],
-              ),
+
               SizedBox(
                 height: 20,
               ),
@@ -62,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                   setState(() {});
                 },
                 elevation: 5,
-                text: 'Entrar',
+                text: 'Cadastrar',
               ),
               SizedBox(
                 height: 20,
@@ -108,13 +116,13 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    'Não tem uma conta?',
+                    'Já tem uma conta?',
                     style: TextStyle(color: Colors.blueGrey),
                   ),
                   SizedBox(
                     width: 5,
                   ),
-                  Text('Cadastrar')
+                  Text('Entrar')
                 ],
               ),
             ],

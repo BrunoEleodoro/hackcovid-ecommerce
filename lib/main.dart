@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hackforgoodecommerce/pages/cadastrar/cadastrar.dart';
 import 'package:hackforgoodecommerce/pages/login/login.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         fontFamily: GoogleFonts.pTSans().fontFamily
       ),
       home: LoginPage(),
+//    home: CadastrarPage(),
     );
   }
 }
