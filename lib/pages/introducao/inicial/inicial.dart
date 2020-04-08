@@ -65,7 +65,10 @@ class _InicialPageState extends State<InicialPage> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Text(
-                                        'Divulgue seus produtos agora de forma fácil e rápida, e consiga clientes do seu bairro'),
+                                      'Divulgue seus produtos agora de forma fácil e rápida, e consiga clientes do seu bairro',
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(fontSize: 20),
+                                    ),
                                   ),
                                 ),
                               ),
@@ -105,7 +108,10 @@ class _InicialPageState extends State<InicialPage> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Text(
-                                        'Compre agora no conforto de sua casa, e ajude os comerciantes e vendedores locais'),
+                                      'Compre agora no conforto de sua casa, e ajude os comerciantes e vendedores locais',
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(fontSize: 20),
+                                    ),
                                   ),
                                 ),
                               ),

@@ -17,16 +17,17 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              IconButton(
-                padding: EdgeInsets.all(0),
-
-                icon: Icon(Icons.arrow_back),
-                onPressed: () {
+              SizedBox(
+                height: 20,
+              ),
+              GestureDetector(
+                onTap: () {
                   Navigator.pop(context);
                 },
+                child: Icon(Icons.arrow_back),
               ),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
               Text(
                 'Entrar',

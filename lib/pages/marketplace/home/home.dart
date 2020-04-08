@@ -1,6 +1,7 @@
 import 'package:circular_bottom_navigation/circular_bottom_navigation.dart';
 import 'package:circular_bottom_navigation/tab_item.dart';
 import 'package:flutter/material.dart';
+import 'package:hackforgoodecommerce/pages/marketplace/vendedor/vendedor.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -88,29 +89,37 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Wrap(
                       children: categorias.map((item) {
-                    return Container(
-                      width: 100,
-                      height: 120,
-                      color: Colors.white,
-                      margin: EdgeInsets.all(5),
-                      padding: EdgeInsets.all(5),
-                      alignment: Alignment.center,
-                      child: Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Image.asset(
-                              item['image'],
-                              width: 50,
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              item['title'],
-                              textAlign: TextAlign.center,
-                            )
-                          ],
+                    return GestureDetector(
+                      onTap: (){
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => VendedorPage()),
+                        );
+                      },
+                      child: Container(
+                        width: 100,
+                        height: 120,
+                        color: Colors.white,
+                        margin: EdgeInsets.all(5),
+                        padding: EdgeInsets.all(5),
+                        alignment: Alignment.center,
+                        child: Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Image.asset(
+                                item['image'],
+                                width: 50,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                item['title'],
+                                textAlign: TextAlign.center,
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     );

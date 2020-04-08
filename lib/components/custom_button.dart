@@ -6,7 +6,7 @@ class CustomButton extends StatelessWidget {
   var text;
   double radius;
 
-  CustomButton({this.onPressed, this.elevation, this.text, this.radius});
+  CustomButton({this.onPressed, this.elevation, this.text, this.radius = 5});
 
   @override
   Widget build(BuildContext context) {

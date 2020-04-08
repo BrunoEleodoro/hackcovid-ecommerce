@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:hackforgoodecommerce/components/custom_button.dart';
+import 'package:hackforgoodecommerce/pages/marketplace/home/home.dart';
 
 class CadastrarPage extends StatefulWidget {
   @override
@@ -18,14 +19,23 @@ class _CadastrarPageState extends State<CadastrarPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               SizedBox(
-                height: 60,
+                height: 20,
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: Icon(Icons.arrow_back),
+              ),
+              SizedBox(
+                height: 20,
               ),
               Text(
                 'Cadastrar',
                 style: TextStyle(fontSize: 35),
               ),
               SizedBox(
-                height: 60,
+                height: 20,
               ),
               TextFormField(
                 decoration: InputDecoration(labelText: 'Nome'),
@@ -61,13 +71,15 @@ class _CadastrarPageState extends State<CadastrarPage> {
               SizedBox(
                 height: 20,
               ),
-
               SizedBox(
                 height: 20,
               ),
               CustomButton(
                 onPressed: () {
-                  setState(() {});
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
                 },
                 elevation: 5,
                 text: 'Cadastrar',
