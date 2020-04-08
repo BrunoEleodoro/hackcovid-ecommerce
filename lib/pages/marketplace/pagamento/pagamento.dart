@@ -5,6 +5,7 @@ import 'package:flutter_credit_card/credit_card_widget.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:hackforgoodecommerce/components/custom_button.dart';
 import 'package:hackforgoodecommerce/pages/marketplace/home/home.dart';
+import 'package:hackforgoodecommerce/pages/marketplace/meu_pedido/meu_pedido.dart';
 import 'package:hackforgoodecommerce/pages/marketplace/pagamento/form/credit_card_form.dart';
 
 class PagamentoPage extends StatefulWidget {
@@ -56,7 +57,7 @@ class _PagamentoPageState extends State<PagamentoPage> {
                           onPressed: () {
                             Navigator.pushReplacement(
                               context,
-                              MaterialPageRoute(builder: (context) => PagamentoPage()),
+                              MaterialPageRoute(builder: (context) => MeuPedido()),
                             );
                           },
                           elevation: 5,
