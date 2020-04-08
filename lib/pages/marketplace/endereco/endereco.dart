@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:hackforgoodecommerce/components/custom_button.dart';
 import 'package:hackforgoodecommerce/pages/marketplace/home/home.dart';
+import 'package:hackforgoodecommerce/pages/marketplace/pagamento/pagamento.dart';
 
 class EnderecoPage extends StatefulWidget {
   @override
@@ -78,7 +79,7 @@ class _EnderecoPageState extends State<EnderecoPage> {
                 onPressed: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
+                    MaterialPageRoute(builder: (context) => PagamentoPage()),
                   );
                 },
                 elevation: 5,
