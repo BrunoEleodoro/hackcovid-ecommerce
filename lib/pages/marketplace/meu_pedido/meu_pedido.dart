@@ -127,13 +127,27 @@ class _MeuPedidoState extends State<MeuPedido> {
                         children: <Widget>[
                           Transform.rotate(
                             angle: pi / 4,
-                            child: Container(
-                              width: 30,
-                              height: 30,
-                              decoration: BoxDecoration(
-                                  color: Color(0XFF667eea),
-                                  borderRadius:
+                            child: Stack(
+                              alignment: Alignment.center,
+                              children: <Widget>[
+                                Container(
+                                  width: 20,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                      color: Color(0XFF667eea),
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(7))),
+                                ),
+                                Container(
+                                  width: 30,
+                                  height: 30,
+                                  decoration: BoxDecoration(
+                                      border:
+                                      Border.all(color: Colors.grey, width: 1),
+                                      borderRadius:
                                       BorderRadius.all(Radius.circular(7))),
+                                ),
+                              ],
                             ),
                           ),
                           SizedBox(
@@ -157,10 +171,10 @@ class _MeuPedidoState extends State<MeuPedido> {
                               height: 30,
                               decoration: BoxDecoration(
 //                                  color: Color(0XFF667eea),
-                                  border: Border.all(
-                                      color: Colors.grey, width: 1),
+                                  border:
+                                      Border.all(color: Colors.grey, width: 1),
                                   borderRadius:
-                                  BorderRadius.all(Radius.circular(7))),
+                                      BorderRadius.all(Radius.circular(7))),
                             ),
                           ),
                           SizedBox(
@@ -170,7 +184,8 @@ class _MeuPedidoState extends State<MeuPedido> {
                         ],
                       ),
                     ],
-                  )
+                  ),
+
                 ],
               ),
             ),
