@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hackforgoodecommerce/components/custom_button.dart';
-import 'package:hackforgoodecommerce/pages/cadastrar/cadastrar.dart';
-import 'package:hackforgoodecommerce/pages/login/login.dart';
+import 'package:hackforgoodecommerce/pages/introducao/cadastrar/cadastrar.dart';
+import 'package:hackforgoodecommerce/pages/introducao/login/login.dart';
 
 class EscolhaPage extends StatefulWidget {
   @override

@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hackforgoodecommerce/pages/cadastrar/cadastrar.dart';
-import 'package:hackforgoodecommerce/pages/escolha/escolha.dart';
-import 'package:hackforgoodecommerce/pages/login/login.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:hackforgoodecommerce/pages/inicial/inicial.dart';
+import 'package:hackforgoodecommerce/pages/marketplace/home/home.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,8 +17,9 @@ class MyApp extends StatelessWidget {
       ),
 //      home: LoginPage(),
 //    home: InicialPage(),
-    home: EscolhaPage(),
+//    home: EscolhaPage(),
 //    home: CadastrarPage(),
+    home: HomePage(),
     );
   }
 }
